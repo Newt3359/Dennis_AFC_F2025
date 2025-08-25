@@ -1,1 +1,1 @@
-My favorite drink is DR Pepper
+My favorite drink is DR Pepper and Coors
