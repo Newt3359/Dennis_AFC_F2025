@@ -1,0 +1,8 @@
+let fruits = ["apple", "banana", "pear"];
+
+console.log(fruits[0]);
+
+common methods
+push(), pop(), shift(), unshift(), trim(), concat(), copyWithin(), every(), filter(),
+flat(), flatMap(), forEach(), indexOf(), lastIndexOf(), map(), reduce(),
+reduceRight(), reverse(), slice(), some(), sort(), and splice().
