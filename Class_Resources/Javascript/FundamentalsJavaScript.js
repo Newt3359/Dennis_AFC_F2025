@@ -76,6 +76,7 @@
 // console.log(d.getHours())
 
 
-const areaOfRectangle = (a, b) => a*b;
+// const areaOfRectangle = (a, b) => a*b;
+//
+// console.log(areaOfRectangle(7,3))
 
-console.log(areaOfRectangle(7,3))
