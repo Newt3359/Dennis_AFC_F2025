@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Demo</title>
+</head>
+<body>
+<!--Browser can only Post and Get can't be CRUD compliant without tools-->
+<form action="" method="get">
+<div style="text-align: center">
+    <label for="First Name">First Name:  </label><input type="text" name="First Name" id="First Name" placeholder="John" required>
+    <label for="Last Name">Last Name:  </label><input type="text" name="Last Name" id="Last Name" placeholder="Smith">
+    <br>
+    <label for="Phone Number">Phone Number:  </label><input type="tel" name="Phone Number" id="Phone Number" placeholder="Enter Phone Number" required>
+    <br>
+    <label for="Email"> Email
+        <input type="email" name="Email" id="Email">
+    </label>
+    <label for="Age">Age:
+    <input
+            type="number"
+            name="Age"
+            id="Age"
+            min="16"
+            max="40"
+            required
+    >
+    </label>
+    <label for="Marital Status" id="Marital Status"> Are you Married?
+        <input type="radio" name="Marital Status" id="" value="yes"> Yes
+        <input type="radio" name="Marital Status" id="" value="no" checked>No
+        <input type="radio" name="Marital Status" id="" value="Divorced">Divorced
+    </label>
+
+    </div>
+    <div style="text-align: center">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </div>
+</form>
+
+</body>
+</html>

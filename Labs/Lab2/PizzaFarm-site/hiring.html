@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hiring Page</title>
+    <link rel="icon" href="/favicon.png" type="image/png" />
+</head>
+<body>
+
+<div style="text-align: center">
+    <a style="padding: 33px" href="index.html">Home</a><a style="padding: 33px" href="menu.html">Menu</a><a style="padding: 33px" href="hiring.html">Now Hiring</a>
+</div>
+
+<h2 style="text-align: center">Join the Pizza Barn Family</h2>
+<h4 style="text-align: center">Fill out an application bellow!</h4>
+
+<form action="" method="get">
+
+    <label for="First Name">First Name <input
+            type="text"
+            name="First Name"
+            id="First Name"
+            minlength="1"
+            maxlength="20"
+            required
+    >
+    </label>
+<br>
+    <label for="Last Name">Last Name: <input
+            type="text"
+            name="Last Name"
+            id="Last Name"
+            minlength="1"
+            maxlength="20"
+    >
+    </label>
+<br>
+    <div>
+    <label for="Address 1">Address 1: <input
+            type="text"
+            name="Address 1"
+            id="Address 1"
+            required
+    >
+    </label>
+    <label for="Address 2">Address 2: <input
+            type="text"
+            name="Address 2"
+            id="Address 2"
+
+    >
+    </label>
+    </div>
+<br>
+    <label for="City">City: <input
+            type="text"
+            name="City"
+            id="City"
+            maxlength="29"
+            required
+    >
+    </label>
+<br>
+    <label for="State">State:
+    <select id="State" name="State">
+        <option value="">-- select a state</option>
+        <option value="TX">Texas</option>
+        <option value="HI">Hawaii</option>
+        <option value="NV">Nevada</option>
+    </select>
+    </label>
+<br>
+    <label for="Age">Age: <input
+    type="number"
+    name="Age"
+    id="Age"
+    min="21"
+    max="99"
+    required
+    >
+    </label>
+<br>
+    <label for="Phone Number">Phone Number: <input
+    type="tel"
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+    id="Phone Number"
+    name="Phone Number"
+    placeholder="123-456-7890"
+    required
+    >
+    </label>
+<br>
+    <label for="Email">Email: <input
+    type="email"
+    id="Email"
+    name="Email"
+    required
+    placeholder="john.smif@hotmail.com"
+    >
+    </label>
+<br>
+    <label for="Password">Password: <input
+    type="password"
+    id="Password"
+    name="Password"
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+    required
+    title="8–12 characters and must include at least one uppercase, one lowercase, one number, and one special symbol."
+    >
+    </label>
+<br>
+    <label for="Marital Status" id="Marital Status"> Are you Married?
+        <input type="radio" name="Marital Status" id="" value="yes"> Yes
+        <input type="radio" name="Marital Status" id="" value="no" checked>No
+    </label>
+<br>
+    <label for="Favorite Colors" id="Favorite Colors">Please Select your favorite colors
+    <input type="checkbox" name="Favorite Colors" value="Blue"> Blue
+    <input type="checkbox" name="Favorite Colors" value="Red">Red
+    <input type="checkbox" name="Favorite Colors" value="Yellow">Yellow
+    <input type="checkbox" name="Favorite Colors" value="Green">Green
+    <input type="checkbox" name="Favorite Colors" value="Purple">Purple
+    </label>
+<br>
+    <label for="More Info" id="More Info"><textarea
+        rows="4"
+        maxlength="30"
+        placeholder="Tell us about yourself">
+
+    </textarea>
+    </label>
+<br>
+    <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+
+</body>
+</html>
