@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Css Demo 1</title>
+
+    <style>
+        selector{
+         /*properties = name:value   */
+        }
+        .dog.cat{
+            background-color: green;
+        }
+
+        .dog .cat{
+            background-color: orange;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<p id="Greeting" style="margin-bottom: 100px">Hello world</p>
+
+<p style="margin: 200px">Bye</p>
+
+<ul style="background-color: blue">
+    <li class="dog"><span class="cat">Dog</span></li>
+    <li class="cat" style="background-color: red">Cat</li>
+    <li class="dog cat">CatDog</li>
+</ul>
+
+<div class="dog">
+    <ul>
+        <li>nothing</li>
+        <li>
+            <p class="cat">cat</p>
+        </li>
+    </ul>
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>

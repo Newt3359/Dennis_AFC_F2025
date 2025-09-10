@@ -1,0 +1,10 @@
+Selectors:
+tag selectors = p ,img ,h1 ,etc.
+id selector = #nameOfId i.e. #Greeting
+class selector = .nameOfClass  (i.e. .dog)
+
+combinator?:
+tag and id
+p#Greeting gets p tag with greeting
+p #Greeting looks for a p tag with greeting in it
+p, #Greeting all p tags and id with greeting

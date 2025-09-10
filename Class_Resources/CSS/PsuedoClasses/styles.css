@@ -1,0 +1,32 @@
+h1:hover{
+    background-color: blueviolet;
+}
+
+button:hover{
+    color: cornflowerblue;
+}
+input:hover{
+    border: solid 10px royalblue;
+    cursor: pointer;
+}
+
+input:focus{
+    background-color: gainsboro;
+}
+
+button:active{
+    background-color: darkgreen;
+    font-size:20px;
+}
+
+h1:active{
+    font-size:100px;
+}
+
+#Costco:hover{
+    color: dodgerblue;
+}
+/*or this way*/
+a[target='_blank']:hover{
+    color: darkgreen;
+}

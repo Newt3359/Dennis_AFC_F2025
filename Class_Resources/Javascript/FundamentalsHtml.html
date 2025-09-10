@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dom - Demo 1</title>
 </head>
 <body>
+<h1>Avengers</h1>
+<h1>X-men</h1>
+<label for="pw">Password:</label>
+<input type="password" name="pass_word" id="pw">
+<ul>
+    <li id="teamLeader">Wolverine</li>
+    <li class="mutant">Cyclops</li>
+    <li class="mutant">Shadow Cat</li>
+</ul>
+<script>let xmenTeamLeader = document.getElementById("teamLeader")
+console.log(xmenTeamLeader)
+let mutants = document.getElementsByClassName("mutant")
+console.log(mutants)
+let allXmen = document.getElementsByTagName("li")
+console.log(allXmen)
+let selectedXmen = document.querySelector(".mutant")
+console.log(selectedXmen)
+let allTeams = document.querySelectorAll("h1")
+console.log(allTeams)
+allTeams[1].style.color = "red";
+allTeams[1].style.border = "green solid 5px";
+allTeams[1].style.fontSize = "48px";
+let teamContent = allTeams[0].textContent
+console.log(teamContent)
+allTeams[1].textContent = "New Mutants"
+let input = document.getElementById("pw")
+let inputType = input.type;
+console.log(inputType)
+input.type = "number"
+</script>
 
 </body>
 </html>
