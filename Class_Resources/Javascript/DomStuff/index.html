@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dom Data demo</title>
+</head>
+<body>
+
+<h1>X-Men Roster Application</h1>
+
+<form action="/cerebro">
+<label for="First Name">First Name: </label>
+<input type="text" name="First Name" id="First Name">
+<br></br>
+<button type="submit">Join Team</button>
+</form>
+<script>
+    const rosterHeader = document.querySelector("h1")
+    rosterHeader.addEventListener("click", (event)=>{
+        console.log("You clicked h1")
+        rosterHeader.textContent = "Avengers Assemble!"
+    });
+
+    const form = document.getElementsByTagName("form")
+    form[0].addEventListener("submit", (event)=>{
+    event.preventDefault();
+    let firstName = document.getElementById("First Name")
+    console.log("submitted")
+    console.log("Value from First Name input: ",firstName.value)
+    });
+</script>
+
+</body>
+</html>

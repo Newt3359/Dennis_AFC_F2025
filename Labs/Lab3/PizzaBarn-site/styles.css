@@ -1,0 +1,39 @@
+/*Primary color = barn red; accent hay yellow for to offset the red; white for text and trim.”*/
+body{
+    background-image: url("./Assesets/img_1.png");
+    background-position-x: center;
+    background-attachment: fixed;
+}
+.bg-body-primary{
+  background-color: #7C0A02 !important;
+}
+
+.navbar-collapse,a{
+    color: white !important;
+}
+nav{
+    border: 2px solid #F0E68C !important;
+    height: 125px;
+}
+img{
+    height: 100px;
+    width: 150px;
+    padding-left: 10px;
+
+}
+li,a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+.navbar-brand{
+    padding-left: 10px;
+}
+.nav-link,li,a{
+    padding: 25px;
+}
