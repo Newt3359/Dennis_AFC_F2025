@@ -6,6 +6,7 @@
     <title>Pizza Barn Menu Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6775c197f2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,8 +17,8 @@
             <div><img src="./Assesets/img.png" alt="Barn with animals"></div>
             <div><a class="navbar-brand" href="#" id="RestaurantNameNavBar">Pizza Barn</a></div>
         </div>
-        <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container" id="ContainerHamburgerInAPizzaShop">
+            <button id="HamburgerInAPizzaShop" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
@@ -26,7 +27,8 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                                <!--Put my font awesome icon here so the cows can come home-->
+                    <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html"><i class="fa-solid fa-cow"></i>Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Menu</a>
@@ -38,6 +40,73 @@
         </div>
     </div>
 </nav>
+
+<div class="container CarouselContainer row" id="carousel">
+<div class="col-lg-4 col-sm-4 col-xl-4 col-md-4"></div>
+    <div class="mySlides col-lg-8 col-sm-8 col-md-8 col-xl-8">
+        <div class="col-lg-4 col-sm-4 col-xl-4 col-md-4">
+            <img id="menu-img" src="" alt="">
+        </div>
+        <div id="info" class="col-lg-4 col-sm-4 col-xl-4 col-md-4">
+            <h4 id="menu-name"></h4>
+            <p id="menu-desc"></p>
+            <p id="menu-price"></p>
+        </div>
+    </div>
+</div>
+
+<div class="Buttons">
+    <button class="prev" onclick="prevItem()">Previous</button>
+    <button class="next" onclick="nextItem()">Next </button>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+
+
+
+const menu = [
+    { img: "./Assesets/TheFarm.jpg" ,name: 'The Farm', desc:"Bacon, Ham, Sausage, Pepperoni, Ground Beef, Cheese, and Red Sauce" ,price: 24 },
+    { img: "./Assesets/StraightDairy.jpg", name:'Straight Dairy', desc:"Just Cheese and Red Sauce" ,price: 12  },
+    { img: "./Assesets/TheWholeHog.jpg", name: 'The Whole Hog', desc:"Bacon, Ham, Sausage, Cheese, and red sauce" ,price: 24 },
+    { img: "./Assesets/ThePacifist.jpg", name: 'The Pacifist', desc: "Mushroom, Olive, Jalapeño, peppers, Onion, with Cheese and White Sauce",price: 18 },
+    { img: "./Assesets/TheFarmersDaughter.jpg",name:'The Farmers Daughter', desc: "Bacon, Ham, Sausage, Pepperoni, GroundBeef, Jalapeños, Mushrooms, Onion, Cheese, and Red Sauce",price: 28 }
+];
+
+let i = 0;
+
+function nextItem(){
+    i++;
+    if (i >= menu.length)
+        i = 0;
+    menuDisplay(i);
+}
+function prevItem(){
+    i--;
+    if (i < 0)
+        i = menu.length
+    menuDisplay(i);
+}
+
+const usdFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+});
+
+function menuDisplay(index){
+    const item = menu[index];
+    const img = document.getElementById("menu-img");
+
+    img.src = item.img
+    img.alt = item.name
+    document.getElementById("menu-name").textContent = item.name;
+    document.getElementById("menu-desc").textContent = item.desc;
+    document.getElementById("menu-price").textContent = usdFormatter.format(item.price);
+
+}
+
+
+menuDisplay(i)
+</script>
 </body>
 </html>

@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pizza Barn Landing Page</title>
+    <title>Pizza Barn Menu Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6775c197f2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg bg-body-primary">
     <div class="container-fluid">
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 flex-container">
-            <div><img src="Assesets/img.png" alt="Barn with animals"></div>
+            <div><img src="./Assesets/img.png" alt="Barn with animals"></div>
             <div><a class="navbar-brand" href="#" id="RestaurantNameNavBar">Pizza Barn</a></div>
-            </div>
-        <div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         </div>
-            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
-            </div>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Now Hiring</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container" id="ContainerHamburgerInAPizzaShop">
+            <button id="HamburgerInAPizzaShop" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                                                   <!--Put my font awesome icon here so the cows can come home-->
+                    <a class="nav-link active d-flex align-items-center" aria-current="page" href="#"><i class="fa-solid fa-cow"></i>Home</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="hiring.html">Now Hiring</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
