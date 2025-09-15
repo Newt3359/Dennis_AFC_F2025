@@ -44,7 +44,7 @@ body{
 nav{
     border: 2px solid #F0E68C !important;
     height: 125px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 img{
     height: 100px;
@@ -108,7 +108,7 @@ li,a{
     display: flex;
     justify-content: center;
     max-height: 300px;
-    margin: auto 0;
+    margin: 100px;
     padding: 0;
 }
 
@@ -153,3 +153,33 @@ Button{
     color: white;
     border-color: #F0E68C;
 }
+
+#HiringTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family:"Kode Mono", system-ui;
+    color: white;
+}
+
+
+#application{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+label{
+    color: white;
+}
+
+#PersonalInfo,
+#address,
+#ContactInfo,
+#MaritalStatus,
+#FavoriteColor,
+#TextBox{
+    margin-top: 10px;
+}
+

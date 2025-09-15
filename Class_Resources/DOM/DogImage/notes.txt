@@ -1,0 +1,18 @@
+ALL HTTP Requests
+
+-utilize endpoints
+-recieve data
+-if good parse it
+-if not throw error
+- do something with data
+- handle errors
+
+Fetch skeleton
+-Utilize endpoint
+    fetch url
+- receive data
+-if good parse it
+-if not throw error
+- do something with data
+-handle errors
+.catch()errors
