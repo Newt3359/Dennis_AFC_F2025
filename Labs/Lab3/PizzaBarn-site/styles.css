@@ -6,6 +6,34 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
+#Logo,
+#store-name{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+#store-name{
+    margin-top: 200px;
+    font-family: "Kode Mono", system-ui;
+    color: white;
+    text-shadow: 2px 2px 2px #F0E68C;
+}
+
+#logo-img{
+    height: 280px;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    border: #F0E68C solid 3px;
+    box-shadow: 2px 2px 2px black;
+    gap: 0;
+}
+
 .bg-body-primary{
   background-color: #7C0A02 !important;
 }
