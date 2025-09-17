@@ -1,7 +1,7 @@
 /*Primary color = barn red; accent hay yellow for to offset the red; white for text and trim.”*/
 
 body{
-    background-image: url("./Assesets/img_1.png");
+    background-image: url("Assesets/Backround.png");
     background-position-x: center;
     background-attachment: fixed;
     background-size: cover;
