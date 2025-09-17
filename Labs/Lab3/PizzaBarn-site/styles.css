@@ -168,6 +168,9 @@ Button{
     display: grid;
     align-content: center;
     justify-content: center;
+    background-color: #7C0A02;
+    border: #F0E68C 5px solid;
+    box-shadow: black 2px 2px 2px;
 }
 
 label{
