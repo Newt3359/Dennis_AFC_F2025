@@ -1,10 +1,10 @@
-function validateName() {
-    let fName = document.forms["application"]["FirstName"].value
-    if (fName == "") {
-        alert("Please Enter your name");
-        return false
-    }
-}
+// function validateName() {
+//     let fName = document.forms["application"]["FirstName"].value
+//     if (fName == "") {
+//         alert("Please Enter your name");
+//         return false
+//     }
+// }
 
     function validateAge() {
         let age = document.forms["application"]["Age"].value
