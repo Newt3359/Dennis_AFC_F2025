@@ -49,7 +49,7 @@
 <form id="application" class="container" method="post">
 
     <div class="container-fluid row" id="PersonalInfo">
-        <div class="col-lg-1"></div>
+
         <div class="col-lg-2">
             <label>First Name:
                 <input type="text" placeholder="Farmer" id="FirstName" onblur="validateName()" name="first name">
@@ -62,7 +62,7 @@
             </label>
         </div>
         <div class="col-lg-1"></div>
-        <div class="col-lg-1">
+        <div class="col-lg-2">
             <label>Age:
                 <input type="number" placeholder="55" id="Age" onblur="validateAge()" name="age">
             </label>
@@ -101,7 +101,7 @@
 
     <div class="container-fluid row" id="ContactInfo">
 
-        <div class ="col-lg-1"></div>
+
         <div class="col-lg-2">
             <label>Phone Number:
                 <input type="tel" placeholder="9512623062" id="PhoneNumber" onblur="validatePhoneNumber()" name="phone number">
@@ -123,7 +123,6 @@
     </div>
 
     <div class="container-fluid row" id="MaritalStatus">
-        <div class="col-lg-5"></div>
         <div class="col-lg-3">
             <label id="Answer">Marital Status:
                 <input type="radio" name="Marital Status" value="yes"> Yes
@@ -133,8 +132,7 @@
     </div>
 
     <div class="container-fluid row" id="FavoriteColor">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
             <label>Favorite Colors:
                 <input type="checkbox" name="Favorite Colors" value="Blue"> Blue
                 <input type="checkbox" name="Favorite Colors" value="Red">Red
@@ -146,8 +144,7 @@
     </div>
 
     <div class="container-fluid row" id="TextBox">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4">
+        <div class="col-lg-5">
             <label>Additional Information:
                 <textarea rows="4" cols="50" id="TextArea" maxlength="30" name="Text area"></textarea>
                 <p>Characters Remaining: <span id="charCount">30</span></p>
@@ -155,7 +152,7 @@
         </div>
     </div>
 
-    <div class="Buttons">
+    <div class="Buttons" id="HiringButtons">
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
     </div>
