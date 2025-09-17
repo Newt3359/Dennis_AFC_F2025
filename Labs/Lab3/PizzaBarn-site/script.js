@@ -25,17 +25,17 @@ function validateName() {
             alert("invalid phone number")
         }
     }
-    function validatePassword() {
-        let passwd = document.forms["application"]["Password"].value
-        const regex2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+={}\[\]|\\:;"'<>,.?/`~-])[A-Za-z\d!@#$%^&*()_+={}\[\]|\\:;"'<>,.?/`~-]{8,}$/;
-        if (regex2.test(passwd) === false) {
-            alert("Must be at least 8 characters long.\n" +
-                "Have at least one uppercase letter.\n" +
-                "Have at least one lowercase letter.\n" +
-                "Have at least one digit.\n" +
-                "Have at least one special character ")
-        }
-    }
+    // function validatePassword() {
+    //     let passwd = document.forms["application"]["Password"].value
+    //     const regex2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+={}\[\]|\\:;"'<>,.?/`~-])[A-Za-z\d!@#$%^&*()_+={}\[\]|\\:;"'<>,.?/`~-]{8,}$/;
+    //     if (regex2.test(passwd) === false) {
+    //         alert("Must be at least 8 characters long.\n" +
+    //             "Have at least one uppercase letter.\n" +
+    //             "Have at least one lowercase letter.\n" +
+    //             "Have at least one digit.\n" +
+    //             "Have at least one special character ")
+    //     }
+    // }
 
 
     const textarea = document.getElementById("TextArea");
@@ -54,29 +54,7 @@ function validateName() {
         }
     })
 
-    // function logInfo(){
-    //     event.preventDefault()
-    //     const fName = document.getElementById('FirstName').value
-    //     console.log(fName)
-    // }
-// function logInfo() {
-//     event.preventDefault()
-//     const myForm = document.getElementById('application');
-//     if (myForm) {
-//         const elementsWithIds = myForm.querySelectorAll('*[id]');
-//
-//         elementsWithIds.forEach(element => {
-//             // const elementId = element.id;
-//             // console.log("Found element with ID:", elementId.value);
-//             // // Example: Accessing the element by its ID again
-//             // const accessedElement = document.getElementById(elementId);
-//             // console.log("Accessed element type:", accessedElement.tagName);
-//             console.log(element.value)
-//         });
-//     } else {
-//         console.log("Form with ID 'myFormId' not found.");
-//     }
-// }
+
 
 
 const myForm = document.getElementById('application');
