@@ -8,15 +8,18 @@ const person = {
 
 let myVariable;
 
-describe("Baseline test for if it exists and only validates strings", () => {
+describe("Function testing", () => {
 
-    test("Tests that function exists", ()=>{
+    test("Tests that function exists", () => {
         expect(typeof isPalindrome).toBe("function")
     })
 
-    test("Is function taking correct amount of arguments", ()=>{
+    test("Is function taking correct amount of arguments", () => {
         expect(isPalindrome.length).toBe(1);
     })
+})
+
+describe("Validate input types", () => {
 
     test("Only test strings", () =>{
         expect(isPalindrome(123)).toBe(false)
