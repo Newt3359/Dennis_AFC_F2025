@@ -20,7 +20,5 @@ function isPalindrome(input){
         }
     }
     return true;
-
 }
-
 module.exports.isPalindrome = isPalindrome;

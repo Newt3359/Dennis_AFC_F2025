@@ -21,11 +21,11 @@ describe("Function testing", () => {
 
 describe("Validate input types", () => {
 
-    test("Only test strings", () =>{
+    test("Does not accept numbers", () =>{
         expect(isPalindrome(123)).toBe(false)
     })
 
-    test("Only test strings", () =>{
+    test("Does not accept arrays", () =>{
         expect(isPalindrome([1,2,3])).toBe(false)
     })
 
