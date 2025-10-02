@@ -1,0 +1,41 @@
+import React, { useState } from 'react';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+} from 'reactstrap';
+import {Link} from "react-router-dom";
+import logo from "../assets/Logo.png"
+
+function AppNavBar(args) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+
+    return (
+        <div>
+            <Navbar dark {...args} id="WholeBar">
+                <NavbarBrand id="NavBarLogo"><img src={logo} id="LogoImage" className="text-white"/>Pizza Barn</NavbarBrand>
+                <NavbarToggler onClick={toggle}/>
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="me-auto" navbar>
+                        <NavItem>
+                            <Link className="nav-link text-white" to="/" id="HomeLink">Home</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link className="nav-link text-white" to="/menu" id="MenuLink">Menu</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link className="nav-link text-white" to="/hiring" id="HiringLink">Hiring</Link>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </div>
+    );
+}
+
+export default AppNavBar;
