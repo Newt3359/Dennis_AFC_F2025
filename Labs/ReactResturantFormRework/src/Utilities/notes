@@ -1,0 +1,94 @@
+import { Table } from "reactstrap";
+import { MenuInfo } from "../Utilities/MenuInfo.js";
+
+function MenuTable() {
+  return (
+    <Table bordered hover id="Menu" style={{ border: "black 1.5px solid" }}>
+      {/* Header */}
+      <thead style={{ backgroundColor: "#7C0A02", color: "white" }}>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      {/* Body */}
+      <tbody>
+        {MenuInfo.map((m, index) => (
+          <tr
+            key={index}
+            style={{ color: "white", backgroundColor: "#7C0A02" }}
+          >
+            <th scope="row">
+              <img src={m.img} alt={m.name} id="MenuImage" />
+            </th>
+            <td>{m.name}</td>
+            <td>{m.desc}</td>
+            <td>{m.price}</td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
+  );
+}
+
+export default MenuTable;
+
+
+
+import {Table} from "reactstrap";
+import {MenuInfo} from "../Utilities/MenuInfo.js";
+
+
+
+function MenuTable(){
+
+    const Menu = MenuInfo.map((m,index) =>{
+        return(
+        <tbody id={"MenuItem"} key={index}>
+        <tr style={{color: 'white', backgroundColor: '#7C0A02'}}>
+            <th scope="row">
+                <img src={m.img} alt={m.name} id={"MenuImage"}/>
+            </th>
+            <td>
+                {m.name}
+            </td>
+            <td>
+                {m.desc}
+            </td>
+            <td>
+                {m.price}
+            </td>
+        </tr>
+        </tbody>
+        )
+    })
+
+    return(
+        <>
+        <Table bordered hover size="" id={"Menu"} style={{border: "black 1.5px solid"}}>
+            <thead style={{backgroundColor: '#7C0A02', color: "white"}}>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        price
+                    </th>
+                </tr>
+            </thead>
+            {Menu}
+        </Table>
+        </>
+    )
+}
+
+export default MenuTable;
