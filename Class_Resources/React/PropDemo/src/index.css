@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.child{
+    color: blue;
+}
+
+.parent{
+    color: darkgreen;
+}
+p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    margin: 2px;
+    padding: 0;
+    color: aquamarine;
+}
